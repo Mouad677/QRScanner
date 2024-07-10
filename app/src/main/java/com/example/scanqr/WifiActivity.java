@@ -25,6 +25,7 @@ public class WifiActivity extends AppCompatActivity implements View.OnClickListe
     String wifiName = "";
     String wifiPassword = "";
     ImageView img_historic;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,13 +62,9 @@ public class WifiActivity extends AppCompatActivity implements View.OnClickListe
         ContentValues values = new ContentValues();
         values.put("Name", wifiName);
         values.put("Password", wifiPassword);
-        /*long id = */
+
         db.insert("WifiTable",null, values);
-        /*if(id != -1){
-            Log.d("Message", "Name and Password added !");
-        }else{
-            Log.d("Error", "Name and Password didnt added !");
-        }*/
+
 
         bt_copy.setOnClickListener(new View.OnClickListener() {
             @Override

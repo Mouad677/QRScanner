@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-
+    
 public class WifiHistoric extends AppCompatActivity {
     SQLiteDatabase Db;
     ListView lv;

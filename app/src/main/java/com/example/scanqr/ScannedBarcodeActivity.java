@@ -44,7 +44,6 @@ public class ScannedBarcodeActivity extends AppCompatActivity {
     String s = "";
 
     SQLiteDatabase db;
-
     ArrayList<String> list = new ArrayList<>();
 
     @Override
@@ -52,7 +51,6 @@ public class ScannedBarcodeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scanned_barcode);
         initViews();
-
 
     }
 

@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <item
+        android:id="@+id/historicW"
+        android:title="Wifi Historic"
+        android:icon="@drawable/baseline_history_24"
+        />
+    <item
+        android:id="@+id/generateW"
+        android:title="Generate Wifi"
+        android:icon="@drawable/qrcode"
+        />
 </menu>

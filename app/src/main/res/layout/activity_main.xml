@@ -9,12 +9,15 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/img_historic"
+        android:id="@+id/img_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_history_24"
+        android:src="@drawable/menu30"
+        android:layout_margin="8dp"
         android:layout_gravity="end"
         />
+
+
 
     <Button
         android:id="@+id/btnScanBarcode"
