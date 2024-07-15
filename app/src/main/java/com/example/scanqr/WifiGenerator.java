@@ -1,12 +1,14 @@
 package com.example.scanqr;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
 import android.content.ContentValues;
+import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -110,7 +112,13 @@ public class WifiGenerator extends AppCompatActivity {
                 bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
                 if(imageUri != null){
                     outputStream.close();
-                    Toast.makeText(this, "Qr Code Saved to gallery", Toast.LENGTH_LONG).show();
+                    AlertDialog.Builder alert = new AlertDialog.Builder(this);
+                    alert.setTitle("Message");
+                    alert.setMessage("Qr Code Saved to gallery");
+                    alert.setPositiveButton("Ok", (DialogInterface d, int which) ->{
+                       d.cancel();
+                    });
+                    alert.show();
                 }
             }
         }catch (Exception e){

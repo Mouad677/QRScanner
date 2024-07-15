@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Historic of all wifi"
         android:textStyle="bold|italic"
+        android:layout_marginBottom="18dp"
         android:layout_gravity="center_horizontal" />
 
     <ListView

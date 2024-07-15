@@ -52,12 +52,12 @@ public class WifiActivity extends AppCompatActivity implements View.OnClickListe
         bt_copy = findViewById(R.id.btCopy);
         db = openOrCreateDatabase("WifiDB.db", Context.MODE_PRIVATE, null);
 
-            ArrayList<String> WifiList = new ArrayList<>();
-            WifiList = getIntent().getStringArrayListExtra("Wifi");
-            wifiName = WifiList.get(0).toString();
-            wifiPassword = WifiList.get(1).toString();
-            txt_WifiName.setText(wifiName);
-            txt_WifiPassword.setText(wifiPassword);
+        ArrayList<String> WifiList = new ArrayList<>();
+        WifiList = getIntent().getStringArrayListExtra("Wifi");
+        wifiName = WifiList.get(0).toString();
+        wifiPassword = WifiList.get(1).toString();
+        txt_WifiName.setText(wifiName);
+        txt_WifiPassword.setText(wifiPassword);
 
         ContentValues values = new ContentValues();
         values.put("Name", wifiName);

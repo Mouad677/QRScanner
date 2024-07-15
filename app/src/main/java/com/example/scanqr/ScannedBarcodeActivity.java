@@ -62,7 +62,8 @@ public class ScannedBarcodeActivity extends AppCompatActivity {
         btnAction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ScannedBarcodeActivity.this, WifiActivity.class).putExtra("Wifi", list));
+                startActivity(new Intent(ScannedBarcodeActivity.this,
+                        WifiActivity.class).putExtra("Wifi", list));
             }
         });
     }
