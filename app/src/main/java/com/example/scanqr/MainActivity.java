@@ -45,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.historicW:{
                         startActivity(new Intent(MainActivity.this, WifiHistoric.class));
-                        break;
+                        return true;
                     }
                     case R.id.generateW:{
                         startActivity(new Intent(MainActivity.this, WifiGenerator.class));
-                        break;
+                        return true;
                     }
                 }
                 return false;

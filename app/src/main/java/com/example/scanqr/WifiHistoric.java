@@ -15,6 +15,7 @@ public class WifiHistoric extends AppCompatActivity {
     ListView lv;
     ArrayList<Wifi> list;
     Wifi wifi;
+    DbHelper dbHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,37 +23,34 @@ public class WifiHistoric extends AppCompatActivity {
         lv = findViewById(R.id.lv);
 
         Db = WifiActivity.db;
+        dbHelper = new DbHelper(this);
+        Db = dbHelper.getReadableDatabase();
         list = Wifi.listWifi;
-        Show();
+        loadWifi();
         ListViewAdapter adapter = new ListViewAdapter(this,list);
         lv.setAdapter(adapter);
 
     }
 
-
-    public void Show(){
-        try {
-            String req = "SELECT * FROM WifiTable";
-            Cursor c = Db.rawQuery("SELECT * FROM WifiTable", null);
-            c.moveToFirst();
-            String s = "";
-            while (!c.isAfterLast()){
-                String name = c.getString(0);
-                String password = c.getString(1);
-                wifi = new Wifi(name, password);
-                if(!list.contains(wifi)){
-                    list.add(wifi);
-                }else {
-                    Toast.makeText(this, "Ce wifi existe deja!", Toast.LENGTH_SHORT).show();
-                }
-
-                c.moveToNext();
-            }
-        }catch (Exception e){
-            System.out.println("Error : " + e.getMessage().toString());
+    private void loadWifi(){
+        list.clear();
+        Cursor cursor = Db.rawQuery("SELECT * FROM WifiTable", null);
+        if(cursor.moveToFirst()){
+            do {
+                int nameIndex = cursor.getColumnIndex("Name");
+                int passwordIndex = cursor.getColumnIndex("Password");
+                String namew  = cursor.getString(nameIndex);
+                String passwordw = cursor.getString(passwordIndex);
+                Wifi wf = new Wifi(namew, passwordw);
+                list.add(wf);
+            }while (cursor.moveToNext());
+        }else {
+            Toast.makeText(this, "No wifi found !", Toast.LENGTH_SHORT).show();
         }
-
+        cursor.close();
     }
+
+
 
     public static void deleteWifi(String ssid){
         String req = "DELETE FROM WifiTable WHERE Name = ?";

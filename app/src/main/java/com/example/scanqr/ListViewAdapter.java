@@ -59,8 +59,8 @@ public class ListViewAdapter extends BaseAdapter {
         img_delete.setOnClickListener((View view) ->{
             AlertDialog.Builder alert = new AlertDialog.Builder(context);
             alert.setTitle("Message");
-            alert.setMessage("Supprimer ce wifi ?");
-            alert.setPositiveButton("Oui", (DialogInterface d, int which) ->{
+            alert.setMessage("Delete this Wifi ?");
+            alert.setPositiveButton("Yes", (DialogInterface d, int which) ->{
                 Animation animation = AnimationUtils.loadAnimation(context, android.R.anim.slide_out_right);
                 animation.setDuration(300);
                 animation.setAnimationListener(new Animation.AnimationListener() {
@@ -74,10 +74,10 @@ public class ListViewAdapter extends BaseAdapter {
                         WifiHistoric.deleteWifi(wifi.nom);
                         Wifi_list.remove(position);
                         notifyDataSetChanged();
-                        Toast.makeText(context, "Wifi Supprimee!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, "Wifi deleted!", Toast.LENGTH_SHORT).show();
                         d.dismiss();
                     }
-
+                    
                     @Override
                     public void onAnimationRepeat(Animation animation) {
 
@@ -86,7 +86,7 @@ public class ListViewAdapter extends BaseAdapter {
                 view.startAnimation(animation);
 
             });
-            alert.setNegativeButton("Non", (DialogInterface d, int which) ->{
+            alert.setNegativeButton("No", (DialogInterface d, int which) ->{
                 d.cancel();
             });
             alert.show();
