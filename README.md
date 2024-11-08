@@ -12,3 +12,6 @@
 
 ## WifiDeleting
 ![WifiDeleting](https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/wifi%20delete%20confirmation%20.jpeg)
+
+## WifiGenerating
+![WifiGenerating](https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/generate%20QrCode.jpeg)
