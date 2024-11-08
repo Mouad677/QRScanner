@@ -15,3 +15,6 @@
 
 ## WifiGenerating
 ![WifiGenerating](https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/generate%20QrCode.jpeg)
+
+## QrCodeSaving
+![QrCodeSaving](https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/QRCode%20saved.jpeg)
