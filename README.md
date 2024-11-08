@@ -8,4 +8,4 @@
 ![WifiDetails](https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/DetailsWifiSceen.jpeg)
 
 ## HistoricWifi
-![HistoricWifi](https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/HistoricScreen.jpeg)
+![HistoricWifi](https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/Items%20with%20delete%20option.jpeg)
