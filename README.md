@@ -1,5 +1,5 @@
 ## HomeScreen
-![HomeScreen](https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/homeScreen.jpeg)
+![HomeScreen]<img src = "https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/homeScreen.jpeg" width = 180px/>
 
 ## ScanningScreen
 ![ScanningScreen](https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/ScanningScreen.jpeg)
