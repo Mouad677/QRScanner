@@ -1,8 +1,8 @@
-## HomeScreen
-<img src = "https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/homeScreen.jpeg" width = 197/>
+## HomeScreen and ScanningScreen
+<img src = "https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/homeScreen.jpeg" width = 197/> <img src = "https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/ScanningScreen.jpeg" width = 197/>
 
-## ScanningScreen
-<img src = "https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/ScanningScreen.jpeg" alt ="ScanningScreen" width = 197/>
+
+
 
 ## WifiDetails
 <img src = "https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/DetailsWifiSceen.jpeg" alt = "WifiDetails" width = 197/>
