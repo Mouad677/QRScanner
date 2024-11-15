@@ -7,7 +7,5 @@
 ## WifiDeleting / WifiGenerating
 <img src = "https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/wifi%20delete%20confirmation%20.jpeg" width = 197 /> <img src = "https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/generate%20QrCode.jpeg" width = 197 />
 
-
-
 ## QrCodeSaving
-![QrCodeSaving](https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/QRCode%20saved.jpeg)
+<img src = "https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/QRCode%20saved.jpeg" width = 197 />
