@@ -1,11 +1,11 @@
 ## HomeScreen
-<img src = "https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/homeScreen.jpeg" width = 180px/>
+<img src = "https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/homeScreen.jpeg" width = 197/>
 
 ## ScanningScreen
-<img src = "https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/ScanningScreen.jpeg" alt ="ScanningScreen" width = 180px/>
+<img src = "https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/ScanningScreen.jpeg" alt ="ScanningScreen" width = 197/>
 
 ## WifiDetails
-![WifiDetails](https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/DetailsWifiSceen.jpeg)
+<img src = "https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/DetailsWifiSceen.jpeg" alt = "WifiDetails" width = 197/>
 
 ## HistoricWifi
 ![HistoricWifi](https://raw.githubusercontent.com/Mouad677/ScanQR/refs/heads/main/Items%20with%20delete%20option.jpeg)
